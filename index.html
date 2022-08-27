@@ -1,0 +1,269 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LF30.lv</title>
+</head>
+
+
+<body>
+ 
+   <div class="words word-1">
+  <span>M</span>
+  <span>N</span>
+  <span>K</span>
+  <span>C</span>
+</div>
+  
+ <div class="centered1">
+   <h1>IK RISKU BALSOJUMS</h1>
+  </div>
+
+<div class="centered2">
+<button onclick="document.getElementById('id01').style.display='block'" style="width:100%;">Dalībnieku saraksts</button></div>
+  
+<div id="id01" class="modal"> 
+    
+  <span  onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+ 
+    <div class="container">
+ 
+      <h3 style="color:#40312a;">DALĪBNIEKI</h3>
+      <table>
+        <tr>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+        </tr>
+        <tr>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+        </tr>
+        <tr>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+          <tr>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+        </tr>
+        <tr>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+        </tr><tr>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+        </tr>
+        <tr>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+        </tr>
+        <tr>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+        <th>dalibnieks</th>
+        </tr>
+        </tr>
+      </table>
+  </div>
+  </div>
+</div>
+<div class="centered3">
+  
+    <div class="my-form">
+            <form id="my-form" action="https://formspree.io/f/mgeqvzdg" method="POST">
+          
+                <input type="text" name="text"placeholder="Vārds, Uzvārds" />
+              
+                
+                <input type="email" name="email"placeholder="E-pasts" />
+          
+                <input type="numurs" name="numurs"placeholder="Numurs" />
+                
+ <button onclick="myFunction()" id="my-form-button" class="balsot">Balsot</button>
+ 
+ <style>
+body {
+  font-family: "Archivo Black", sans-serif;
+  background: #6f6b6c;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.words {
+  color: #6f6b6c;
+}
+
+.words span {
+  font-size: 7rem;
+  display: inline-block;
+  animation: move 5s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+  }
+  50% {
+    text-shadow: 0 25px 50px black;
+  }
+  100% {
+    transform: translate(30%, 0);
+  }
+}
+
+.words span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.words span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.words span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.words span:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.centered1{
+  color:#40312a;
+}
+.centered2{
+  position:relative;
+  top: 3%;
+ left:7%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container {
+background-color:#dadcdb;
+  
+}
+button {
+  background-color: #dadcdb;
+  color: #40312a;
+  padding: 12px 30px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+ background-color:#40312a;
+  color:white;
+}
+.modal {
+  display: none; 
+  position: absolute;
+  top: 50%;
+  bottom:8%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  right: -35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #dadcdb;
+}
+
+.close:hover,
+.close:focus {
+  color: #40312a;
+  cursor: pointer;
+}
+
+.balsot{
+  padding:12pt;
+  width:98%;
+}
+
+
+input[type=numurs]
+{
+  width: 30%;
+  padding: 5px;
+}
+input[type=text]
+{
+  width: 30%;
+  padding: 5px;
+}
+
+input[type=email] {
+  width: 30%;
+  padding: 5px;
+}
+
+/* Add a background color when the inputs get focuwidth: 30%;
+  padding: 5px;s */
+input[type=text]:focus, input[type=email]:focus,input[type=numurs]:focus {
+  border: solid 3pt #526a37;
+  outline: none;
+}
+</style>
+
+<script>
+function myFunction() {
+  alert("Paldies! Jūsu balsojums ir pieņemts un reģistrēts!");
+}
+</script>
+   
+   
+  
+
+<script>
+      var form = document.getElementById("my-form");
+      async function handleSubmit(event) {
+       event.preventDefault();
+         var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+         fetch(event.target.action, {
+      method: form.method,
+                        body: data,
+                        headers: {'Accept': 'application/json'}}).then(response => {
+                        if (response.ok) {status.innerHTML = "<span style='color: #526a37;font-size:80pt;'>Balsojums veiksmīgi reģistrēts!</span>";
+                            form.reset()}}).catch(error => {
+                        status.innerHTML = "Oops! There was a problem submitting your form"});}
+                form.addEventListener("submit", handleSubmit)
+            </script>
+
+      
+      
+     
+  
+
+     
+    </div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+
+</script> 
+  </div>
+  </div>
+
+
+</body>
+</html>
